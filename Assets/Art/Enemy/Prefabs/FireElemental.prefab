@@ -1007,6 +1007,8 @@ GameObject:
   - component: {fileID: 9219649144499755444}
   - component: {fileID: 2341386261771494468}
   - component: {fileID: 2146920779225669409}
+  - component: {fileID: 1839411316870796655}
+  - component: {fileID: 7650485114686346707}
   m_Layer: 0
   m_Name: FireElemental
   m_TagString: Untagged
@@ -1086,7 +1088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 1.5
+  speed: 1
   attackRange: 2
 --- !u!114 &2146920779225669409
 MonoBehaviour:
@@ -1101,8 +1103,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 2
-  damage: 50
+  damage: 20
   attackCooldown: 1
+--- !u!114 &1839411316870796655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972024285425991496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6edfbee39b0d0f546b25dc03ab3ca617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+--- !u!136 &7650485114686346707
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3972024285425991496}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.08
+  m_Height: 1.7331994
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.22, z: -0.10440331}
 --- !u!1 &3997728500504602174
 GameObject:
   m_ObjectHideFlags: 0
